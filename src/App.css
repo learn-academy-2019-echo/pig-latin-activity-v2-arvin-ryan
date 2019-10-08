@@ -1,6 +1,6 @@
 body {
   margin: 2em;
-     background-image: url("https://images3.alphacoders.com/235/235985.jpg");
+  background-image: url("https://images3.alphacoders.com/235/235985.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;
@@ -22,12 +22,12 @@ body {
 
 .content {
         grid-area: content;
-    }
+}
 
 
 .footer {
-        grid-area: footer;
-    }
+    grid-area: footer;
+}
 
 .wrapper {
     /*background-color: #fff;*/
@@ -40,6 +40,27 @@ body {
      "content"
      "footer";
   }
+  
+  .speech-bubble {
+	position: relative;
+	background: #fdd7e4;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 1.156em solid transparent;
+	border-right-color: #fdd7e4;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -0.578em;
+	margin-left: -1.156em;
+}
 
 #butcherPig {
     max-width: 100%;
@@ -57,7 +78,7 @@ body {
             "sidebar empty content"
             "sidebar empty content"
             "footer footer footer";
-          grid-auto-rows: minmax(150px; 100%);
+          /*grid-auto-rows: minmax(150px; 100%);*/
       }
     }
 
@@ -70,7 +91,7 @@ body {
             "sidebar empty content"
             "sidebar empty content"
             "footer footer footer";
-          grid-auto-rows: minmax(150px; 100%);
+          /*grid-auto-rows: minmax(150px; 100%);*/
         }
     }
     
@@ -82,26 +103,33 @@ body {
   font-size: 150%; 
 }
 
-.contentBox {
-    border-radius: .5em;
+/*this works*/
+.contentBox { 
+  top: 350px;
+  border-radius: .5em;
   padding: 1em;
   font-size: 150%;
-  
 }
+
+.sidebarBox {
+    margin-top: 350px;
+  border-radius: .5em;
+  padding: 1em;
+  font-size: 150%;
+}
+
 .emptybox {
   border-radius: .5em;
   padding: 1em;
   font-size: 150%; 
 }
 
-.header {
-  background-color: #FFF;
-  padding:4em;
-}
-
-
 .footer {
-  background-color: rgb(134, 134, 134);
+  margin-top: 350px;
+  color: #fdd7e4;
+  font-family: "LCR Prissy Pig", cursive;
+  font-size: 50px;
+  /*background-color: rgb(134, 134, 134);*/
 }
 
 .button{
