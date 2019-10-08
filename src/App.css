@@ -97,6 +97,11 @@ body {
         }
     }
     
+.original-text {
+        font-family: 'LCR Prissy Pig', cursive;
+      font-size: 50px;
+}
+
 .box {
   background-color: #444;
   color: #fff;

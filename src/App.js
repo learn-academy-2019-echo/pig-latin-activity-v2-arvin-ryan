@@ -126,21 +126,20 @@ class App extends React.Component {
     return (
       
       <div className="wrapper">
-      // left side
-        <sidebar className = "box sidebar sidebarBox">
+        <sidebar id="left-side" className = "box sidebar sidebarBox">
           <div>
             <form className="info" onSubmit={this.translate}>
               <label htmlFor="input-phrase">Translate this: </label>
               <input name="input-phrase" onChange={this.handleChange}></input>
               <input className="button" type="submit" value="Submit" />
             </form>
+            <p className="original-text">{this.state.phrase}</p>
           </div>
         </sidebar>
         <div className = "emptybox empty">
         </div>
         <main>
-        // right side
-          <div className="text-center contentBox content speech-bubble speech-bubble" id="tran-text">
+          <div id="right-side" className="text-center contentBox content speech-bubble speech-bubble" id="tran-text">
             <p>{this.state.phraseTranslated}</p>
           </div>
         </main>
