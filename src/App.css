@@ -74,9 +74,10 @@ body {
           grid-gap: 1em;
           grid-template-columns: repeat(3, auto);
           grid-template-areas:
-            "sidebar empty content"
-            "sidebar empty content"
-            "sidebar empty content"
+            "empty empty content"
+            "empty empty content"
+            "empty empty content"
+            "sidebar sidebar sidebar"
             "footer footer footer";
           /*grid-auto-rows: minmax(150px; 100%);*/
       }
@@ -87,9 +88,10 @@ body {
           grid-gap: 1em;
           grid-template-columns: repeat(3, auto);
           grid-template-areas:
-            "sidebar empty content"
-            "sidebar empty content"
-            "sidebar empty content"
+            "empty empty content"
+            "empty empty content"
+            "empty empty content"
+            "sidebar sidebar sidebar"
             "footer footer footer";
           /*grid-auto-rows: minmax(150px; 100%);*/
         }
@@ -112,7 +114,7 @@ body {
 }
 
 .sidebarBox {
-    margin-top: 350px;
+  margin-top: 350px;
   border-radius: .5em;
   padding: 1em;
   font-size: 150%;
@@ -125,10 +127,9 @@ body {
 }
 
 .footer {
-  margin-top: 350px;
   color: #fdd7e4;
   font-family: "LCR Prissy Pig", cursive;
-  font-size: 50px;
+  font-size: 75px;
   /*background-color: rgb(134, 134, 134);*/
 }
 

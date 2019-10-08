@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       phrase: '',
-      phraseTranslated: 'This is where your translated sentence will appear.'
+      phraseTranslated: 'Let me translate to Pig Latin for you.'
     }
   }
   // The translate function is where you will put your logic to convert the sentence entered by the user to pig location.  What is currently in the function will only directly copy what the user has entered.
