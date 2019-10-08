@@ -1,6 +1,10 @@
 body {
   margin: 2em;
 }
+#translated-text {
+      font-family: 'LCR Prissy Pig', cursive;
+      font-size: 30px;
+}
 
 .sidebar {
         grid-area: sidebar;
