@@ -126,9 +126,6 @@ class App extends React.Component {
     return (
       
       <div className="wrapper">
-        <header className="box header">
-                
-        </header>
         <sidebar className = "box sidebar">
           <div>
             <form className="info" onSubmit={this.translate}>
@@ -138,8 +135,10 @@ class App extends React.Component {
             </form>
           </div>
         </sidebar>
+        <div className = "emptybox empty">
+        </div>
         <main>
-          <div className="text-center box content" id="tran-text">
+          <div className="text-center contentBox content" id="tran-text">
             <p>{this.state.phraseTranslated}</p>
           </div>
         </main>
