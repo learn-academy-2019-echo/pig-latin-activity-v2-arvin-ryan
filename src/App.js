@@ -118,17 +118,18 @@ class App extends React.Component {
   handleChange = (e) => {
     this.setState({phrase: e.target.value})
   }
-
+//https://lh3.googleusercontent.com/QvvsRY5ShwDNEouVMK8_z7QCwS3grkgd4mzZOlom23Hurralk54ObvsyEMM8ZSNR5pEFBeBMzltzEEcgi2llYJnhXTuXClN3njmMjtw3vgn8Go5jr40fHMNzfI64eYRrnHbZUutxCA=w2400
+// <div id="pigImage">
+//             <img src='https://images3.alphacoders.com/235/235985.jpg' alt="pig with butcher cut names in pig latin" id="butcherPig"></img>
+//           </div>    
   render() {
     return (
       
       <div className="wrapper">
         <header className="box header">
-          <div id="pigImage">
-            <img src='https://lh3.googleusercontent.com/QvvsRY5ShwDNEouVMK8_z7QCwS3grkgd4mzZOlom23Hurralk54ObvsyEMM8ZSNR5pEFBeBMzltzEEcgi2llYJnhXTuXClN3njmMjtw3vgn8Go5jr40fHMNzfI64eYRrnHbZUutxCA=w2400' alt="pig with butcher cut names in pig latin" id="butcherPig"></img>
-          </div>
+                
         </header>
-        <sidebar className="box sidebar">
+        <sidebar className = "box sidebar">
           <div>
             <form className="info" onSubmit={this.translate}>
               <label htmlFor="input-phrase">Translate this: </label>
